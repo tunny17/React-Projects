@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './App.scss';
 import Faq from './components/faq/Faq';
 
