@@ -1,10 +1,11 @@
 import './App.scss';
+import Profile from './components/profile/Profile';
 
 
 function App() {
   return (
     <div>
-      <h1>hello world</h1>
+      <Profile />
     </div>
   )
 }
