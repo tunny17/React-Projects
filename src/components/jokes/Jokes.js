@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react'
 import './Jokes.scss'
-import cart from '../../assets/cart.png'
+import smiley from '../../assets/smiley.png'
 
 const Jokes = () => {
   const url = 'https://api.chucknorris.io/jokes/random';
@@ -8,10 +8,19 @@ const Jokes = () => {
   const [joke, setJoke] = useState({});
 
   async function getJoke() {
+    setIsLoading(true)
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
+    setJoke(data);
+    setIsLoading(false)
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      getJoke();
+    }, 2000);
+  }, []);
 
 
 
@@ -20,9 +29,13 @@ const Jokes = () => {
     <section className='jokes-sec'>
       <div className="container joke  --bg-light  --card">
         <h2>Random Jokes Generator</h2>     
-        <img src={cart} alt="cart"  className='cart' />
+        <img src={smiley} alt="cart"  className='cart' />
         <hr />
-        <p  className='--my'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque, dolorum doloribus quo soluta tenetur eum adipisci repellendus commodi fugiat.</p>
+        {isLoading ? (
+          <h3>Loading...</h3>
+        ) : (
+          <p  className='--my2'>{joke.value}</p>
+        )}
         <hr />
         <button className='--btn --btn-primary  --btn-block'  onClick={getJoke}>Generate New Joke</button>
       </div>
