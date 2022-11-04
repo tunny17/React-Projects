@@ -1,11 +1,11 @@
 import './App.scss';
-import Profile from './components/profile/Profile';
+import Joke from './components/jokes/Jokes';
 
 
 function App() {
   return (
     <div>
-      <Profile />
+      <Joke />
     </div>
   )
 }
