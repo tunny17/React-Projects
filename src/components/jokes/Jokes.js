@@ -16,11 +16,11 @@ const Jokes = () => {
     setIsLoading(false)
   }
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     getJoke();
-  //   }, 2000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      getJoke();
+    }, 2000);
+  }, []);
 
 
 
