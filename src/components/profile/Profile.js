@@ -31,13 +31,8 @@ const Profile = () => {
                     value={search}
                 />
             </div>
-            {userProfile.filter((value)=> {
-                if (search === '') {
-                    return value
-                } else if (value.name.toLowerCase().includes(search.toLowerCase())) {
-                    return value
-                }
-            }).map((profile) => (
+            {userProfile.filter((value) => value.name.toLowerCase().includes(search.toLowerCase()))
+            .map((profile) => (
                 <div className="profile --card --flex-between" key={profile.id}>
                     <img src={profile.img} alt="profile" />
                     <div className="description">
