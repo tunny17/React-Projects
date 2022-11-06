@@ -6,8 +6,8 @@ const Tabs = () => {
     <section    className='tabs-section'>
       <div className="container">
 
-        <div className="tabs-heading">
-            <h2>More About Us</h2>
+        <div className="tabs-heading    --text-center">
+            <h2 className='--line'>More About Us</h2>
             <p>Click the Tab buttons to learn more.</p>
         </div>
 
