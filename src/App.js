@@ -1,11 +1,11 @@
 import './App.scss';
-import Profile from './components/profile/Profile';
+import Tabs from './components/tabs/Tabs';
 
 
 function App() {
   return (
     <div>
-      <Profile />
+      <Tabs />
     </div>
   )
 }
