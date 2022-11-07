@@ -1,11 +1,13 @@
 import './App.scss';
-import Profile from './components/profile/Profile';
+import Countdown from './components/countdown/Countdown';
+import Product from './components/product/Product';
 
 
 function App() {
   return (
     <div>
-      <Profile />
+      <Countdown />
+      <Product />
     </div>
   )
 }
