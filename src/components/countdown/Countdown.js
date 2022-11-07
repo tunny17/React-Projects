@@ -4,7 +4,7 @@ import './Countdown.scss'
 const Countdown = () => {
   return (
     <div>
-      countdown
+      
     </div>
   )
 }
