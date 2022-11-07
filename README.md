@@ -1,4 +1,5 @@
-here's the link to the FAQ branch(FAQ branch)  -   https://tunny-reactprofileapp.netlify.app/
+here's the link to the FAQ test  -   https://tunny-reactprofileapp.netlify.app/
+here's the link to the joke generator - https://tunnyjokegenerator.netlify.app/
 
 
 
