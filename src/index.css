@@ -34,6 +34,10 @@ body {
   font-family: var(--font-family);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 section {
   width: 100%;
   padding: 8rem 0;
