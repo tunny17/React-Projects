@@ -2,6 +2,10 @@ here's the link to the FAQ test  -   https://tunny-reactprofileapp.netlify.app/
 
 here's the link to the joke generator - https://tunnyjokegenerator.netlify.app/
 
+here's a link to the tabs site  - https://tunnytabs.netlify.app/
+
+
+
 
 
 
