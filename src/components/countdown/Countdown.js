@@ -34,6 +34,10 @@ const Countdown = ({onHideCountdown}) => {
 
     },  1000)
   };
+  
+  useEffect(() => {
+    startCountDown();
+  });
 
 
   function format(t) {
@@ -41,9 +45,6 @@ const Countdown = ({onHideCountdown}) => {
   }
 
 
-  useEffect(() => {
-    startCountDown();
-  }, [])
 
   return (
     <div  className='countdown-section'>
