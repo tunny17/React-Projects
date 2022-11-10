@@ -1,0 +1,19 @@
+section {
+    background: rgb(223, 10, 172);
+    background: linear-gradient(
+        135deg,
+        rgb(223, 10, 172, 1) 35%,
+        rgb(223, 10, 172, 1) 46%
+    );
+}
+
+.weather {
+    width: 100%;
+    max-width: 350px;
+    height: 80vh;
+    background: url();
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
