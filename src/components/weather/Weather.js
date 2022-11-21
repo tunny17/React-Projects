@@ -1,7 +1,16 @@
-import React from 'react'
+import { useState } from 'react'
 import './Weather.scss'
 
 const Weather = () => {
+  const [input, setInput] = useState("")
+  const [weather, setWeather] = useState({})
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState(true)
+  const [errorMsg, setErrorMsg] = useState("")
+
+
+
+
   return (
     <section    className='--100vh --center-all'>
       <div className="container weather --flex-center">
