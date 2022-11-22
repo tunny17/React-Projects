@@ -19,9 +19,18 @@ const Weather = () => {
   }
 
   const getWeatherData = (e) => { 
-    if(e.key === "Enter" && input === "") {
+    if (e.key === "Enter" && input === "") {
       setErrorMsg("Input cannot be empty")
       setError(true)
+    }
+    if (e.key === "Enter" && input !== "") {
+      fetch(`${api.url}weather?q=${input}&unit=metrics&APPID=${api.key}`)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+      })
     }
   }
 
