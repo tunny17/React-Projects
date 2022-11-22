@@ -9,6 +9,22 @@ const Weather = () => {
   const [errorMsg, setErrorMsg] = useState("")
 
 
+  const api = {
+    url: "https://api.openweathermap.org/data/2.5/",
+    key: "7ac67a2b59c0ee2e9ebcc21b1341f523",
+  }
+
+  const getInput = (e) => { 
+    setInput(e.target.value)
+  }
+
+  const getWeatherData = (e) => { 
+    if(e.key === "Enter" && input === "") {
+      setErrorMsg("Input cannot be empty")
+      setError(true)
+    }
+  }
+
 
 
   return (
@@ -19,10 +35,13 @@ const Weather = () => {
             <p>2022-11-09</p>
 
             <div className="--form-control  --my2">
-                <input type="text"  placeholder='Search city name...' />
+                <input type="text"  placeholder='Search city name...' onChange={getInput} value={input} onKeyPress={getWeatherData}/>
             </div>
 
-            <div className="result  --card  --my2">
+            {error ? (
+                <p>{errorMsg}</p>
+            ) : (
+              <div className="result  --card  --my2">
                 <h2>Abuja</h2>
                 <div className="icon">
                     <img src="" alt="clouds" />
@@ -31,6 +50,8 @@ const Weather = () => {
                 <p>Weather: Clouds</p>
                 <p>Temp Range: 23°C / 24°C</p>
             </div>
+            )}
+
         </div>
       </div>
     </section>
