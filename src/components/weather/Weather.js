@@ -12,7 +12,7 @@ const Weather = () => {
   const [errorMsg, setErrorMsg] = useState("");
 
 
-  const [dateToday, setDateToday] = useState(date);
+  const [dateToday] = useState(date);
 
 
   const api = {
@@ -71,7 +71,7 @@ const Weather = () => {
             </div>
 
             {error ? (
-                <p  className={errorMsg != "" ? "error" : ""}>{errorMsg}</p>
+                <p  className={errorMsg !== "" ? "error" : ""}>{errorMsg}</p>
             ) : (
               <div className="result  --card  --my2">
                 <h2>{weather.name}, {weather.sys.country}</h2>
