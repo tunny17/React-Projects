@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 section {
-    background: rgb(223, 10, 172);
-    background: linear-gradient(
-        135deg,
-        rgb(223, 10, 172, 1) 35%,
-        rgb(223, 10, 172, 1) 46%
-    );
+    background: rgb(225, 222, 224);
+    // background: linear-gradient(
+    //     135deg,
+    //     rgb(223, 10, 172, 1) 35%,
+    //     rgb(223, 10, 172, 1) 46%
+    // );
 }
 
 .weather {
@@ -33,13 +35,35 @@ section {
     z-index: 999;
 }
 
+input {
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+}
+input::placeholder {
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: 'Manrope', sans-serif;
+}
+
 .weather-app > *, 
 .result > * {
     color: #fff;
 }
 
 .result {
+    padding: 3rem;
     background: rgba(3, 150, 255, 0.4);
+    p {
+        line-height: 27px;
+    }
+}
+
+img {
+    width: 30%;
 }
 
 .error {
