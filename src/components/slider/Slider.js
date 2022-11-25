@@ -38,7 +38,7 @@ const Slider = () => {
             auto();
         }
         return () => clearInterval(slideInterval);
-    }, [currentSlide]);
+    });
     
 
   return (
