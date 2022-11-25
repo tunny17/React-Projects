@@ -30,7 +30,7 @@ const Slider = () => {
     // useEffect for the content
     useEffect(() => {
         setCurrentSlide(0)
-    }, [])
+    }, []);
 
     // useEffect for the picture scroll
     useEffect(() => {
