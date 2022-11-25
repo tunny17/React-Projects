@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.scss';
-import Weather from './components/weather/Weather';
+import Slider from './components/slider/Slider';
+
 
 
 function App() {
   return (
     <div>
-      <Weather />
+      <Slider />
     </div>
   )
 }
